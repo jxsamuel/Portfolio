@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--external script links-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    
+    <!--css-->
+    <link rel="stylesheet" href="/Users/jacobsamuel/Documents/coding_projects/html/portfolio/css/travel_style.css">
+    
+    <title>Travel Agency</title>
+  </head>
+
+  <body>
+    <div class="bg">
+    <!--red block obscuring background image-->
+    <div class="side-bar"></div>
+    
+    <!--modal-->
+    <div class="modal left fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+    
+            <!--modal body-->
+            <div class="modal-body">
+              <p class="modal-p">Visit Austin</p>
+            </div>
+    
+          </div> <!--modal-content-->
+        </div> <!--modal-dialog-->
+    </div> <!--modal left fade-->
+      
+      
+    <!--main explore heading-->
+    <h1>Explore</h1>
+    
+    <!--facebook and instagram icon links-->
+    <!--have to stay above the button in order to not be pushed down-->
+    <div class="facebook">
+      <a href="https://www.facebook.com"><img src="/Users/jacobsamuel/Documents/coding_projects/html/portfolio/img/Facebook.svg" alt=""></a>
+    </div>
+    
+    <div class="insta">
+      <a href="https://www.instagram.com"><img src="/Users/jacobsamuel/Documents/coding_projects/html/portfolio/img/Instagram.svg" alt=""></a>
+    </div>
+    
+    <!--progress bar-->
+    <!--above button to avoid being pushed down when button opens-->
+    <div class="progress">
+      <div class="progress-value"></div> 
+    </div>
+    
+    <!--div container for all of the button components-->
+    <div class="container">
+      
+      <!--heading next to plus button-->
+      <h2>More Details</h2>
+      
+      <!--container for the button element and content inside of it when it opens-->
+      <div class="more-details-button">
+        <button>
+          <span><img src="/Users/jacobsamuel/Documents/coding_projects/html/portfolio/img/Plus.svg"></span>
+        </button>
+       
+        <!--containers that hold the open content-->   
+        <div id="button-content">
+
+          <div class="button-content-header">
+            <a href="#" id="close-content" class="close-content"><span class="x-1"></span><span class="x-2"></span></a>
+            <span><h3>Explore</h3></span>
+          </div>
+          
+          <!--text body in button content-->
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor repudiandae enim laborum molestiae sequi labore nostrum, 
+            quo quisquam libero. Aut nostrum cupiditate odio enim quis tempora sunt ab nulla. Ducimus? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore officia, omnis totam itaque maxime magni tenetur temporibus fugit 
+            reprehenderit. Facilis vero sint, cum ipsum iusto quidem molestiae minima amet veniam?
+          </p>
+          
+          <!--button in button content-->
+          <div class="read-more"><a href="https://google.com">READ MORE</a></div>
+        </div>
+      </div>
+      </div>
+    </div>
+    <script>
+      //loads function when page is loaded
+      $(document).ready(function(){
+        
+        //checks for a click on the element with the .close-content class which is the x in the open content
+        $('.close-content').click(function (e){
+        
+          e.stopPropagation(); //stops the dom from bubbling up and not executing correctly
+          
+          //removes the open class from the button element to return it to being a button
+          $(".more-details-button").removeClass('open');
+          
+          //shows the explore and more detail headings 
+          $('h1,h2').removeClass('hidden');
+          
+          //allows the animation in the opened button content to play everytime instead of only the first time its opened
+          $('#button-content').removeClass('button-content');
+          
+          //animates the progress bar back to zero when the content is closed
+          $('.progress-value').animate({width: "0%"}, 400);
+          
+          //hides the modal with the content when its closed
+          $('#myModal').modal('hide');
+        });
+
+      
+        //call us button
+        
+        //check for a click on the element with the .more-details-button class which is the plus next to the words "more details"
+        $('.more-details-button').click(function (e) {
+        e.stopPropagation();
+        
+        //adds the class .open to the .more-details-button 
+        $('.more-details-button').addClass('open');
+        
+        //animates the progress bar to the 100% position when the button is pressed
+        $(".progress-value").animate({width: "100%"}, 400);
+        
+        //shows the modal on the left side of the page
+        $('#myModal').modal('show'); });
+
+        //hides the explore and more details headings
+        $('.more-details-button').click(function (e) {
+          e.stopPropagation();
+          $('h1,h2').addClass('hidden');
+        });
+
+        //adds the class containing the animations to the opened content 
+        $('.more-details-button').click(function (e) {
+          e.stopPropagation();
+          $('#button-content').addClass('button-content');
+        });
+
+      });
+    </script>
+  </body>
+</html>

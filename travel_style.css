@@ -1,0 +1,2323 @@
+body {
+  color: white;
+  margin: 0;
+  overflow: hidden;
+}
+
+.bg {
+  width: 100%;
+  z-index: -1;
+  background-image: url(/Users/jacobsamuel/Documents/coding_projects/html/portfolio/img/Coding-Challenge-Image.png);
+  height: 100vh;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.side-bar {
+  width: 27.7%;
+  height: 100%;
+  margin-top: 0rem;
+  position: absolute;
+  background-color: #611818;
+  display: flex;
+}
+
+.modal.left .modal-dialog {
+  position: absolute;
+  margin-top: 0rem;
+  width: 13%;
+  height: 100%;
+  -webkit-transform: translate3d(0%, 0, 0);
+  -ms-transform: translate3d(0%, 0, 0);
+  -o-transform: translate3d(0%, 0, 0);
+  transform: translate3d(0%, 0, 0);
+}
+
+.modal.left .modal-content {
+  height: 100%;
+  overflow-y: auto;
+}
+
+.modal-p {
+  margin-top: 18rem;
+  font-size: 1.5vw;
+  color: white;
+  rotate: -90deg;
+}
+
+.modal.left .modal-body {
+  padding: 0rem 0rem 0rem;
+}
+
+.modal.left.fade .modal-dialog{
+  left: -20rem;
+  -webkit-transition: opacity 0.3s linear, left 0.3s ease-out;
+  -moz-transition: opacity 0.3s linear, left 0.3s ease-out;
+  -o-transition: opacity 0.3s linear, left 0.3s ease-out;
+  transition: opacity 0.3s linear, left 0.3s ease-out;
+}
+
+.modal.left.fade.in .modal-dialog{
+  transition-delay: 100ms;
+  left: 0rem;
+}
+
+.modal-content {
+  border-radius: 0;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.226);
+}
+
+.modal-header {
+  border-bottom-color: #EEEEEE;
+  background-color: #FAFAFA;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .86vw;
+    line-height: 2rem;
+    margin-left: 12%;
+    margin-right: 12%;
+    color:rgb(88, 86, 86);
+}
+
+h1 {
+  position: absolute;
+  color: white;
+  padding-top: 12%;
+  padding-left: 10%;
+  padding-bottom: 0rem;
+  font-size: 15vw;
+  animation: 800ms;
+  animation-name: move;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes move {
+  0% {
+    opacity: 0;
+    transform: translateX(-6rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.facebook {
+  float: right; 
+  margin-top: 43rem; 
+  margin-right: 1.5rem; 
+  position: relative;
+  scale: 1;
+  transition: 300ms;
+  animation: fadeInAnimation 2200ms;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+  0% {
+  opacity: 0;
+  }
+  100% {
+  opacity: 1;
+  }
+}
+
+.facebook:hover {
+  scale: 1.2;
+}
+
+.insta {
+  float: right; 
+  margin-top: 50rem; 
+  margin-right: -4.5rem; 
+  position: relative;
+  scale: 1;
+  transition: 300ms;
+  animation: fadeInAnimation 2200ms;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+  0% {
+  opacity: 0;
+  }
+  100% {
+  opacity: 1;
+  }
+}
+
+.insta:hover {
+scale: 1.2;
+}
+
+.progress {
+  background: rgba(255,255,255,0.1);
+  border-radius: 0rem;
+  align-items: center;
+  position: absolute;
+  display: block;
+  height: 0.7rem;
+  width: 31rem;
+  margin-top: 55rem;
+  margin-left: 61%;
+}
+
+.progress-value {
+  border-radius: 1rem;
+  background: #fff;
+  height: 0.7rem;
+  width: 0;
+}
+
+.container {
+  width: 92rem;
+  margin-left: 20.5rem; 
+  margin-top: 43rem;
+  position: fixed;
+}
+
+h2 {
+  width: 25rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight:100;
+  font-size: 1.8vw;
+  position: relative;
+  color: white;
+  animation: h2FadeInAnimation 1500ms;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes h2FadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.more-details-button {
+  border-radius: 25rem;
+  height: 4rem;
+  width: 4rem;
+  overflow: hidden;
+  position:relative;
+  left: -6%;
+  top: -0.4rem;
+  -webkit-transition: 500ms;
+ /* For Safari 3.1 to 6.0 */
+  transition: 500ms;
+  transform: translate3d(50%, -116%, 0);
+}
+
+.more-details-button button {
+  background: none;
+  border: none;
+  width: 100%;
+  height: 100%;
+}
+
+.more-details-button button span {
+  margin-right: 0.5rem;
+}
+
+.more-details-button.open {
+  top: 2rem;
+  left: -22.3%;
+  width: 34%;
+  height: 34rem;
+  z-index: 10;
+  cursor: default;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 0em;
+  border-radius: 0rem;
+  -webkit-transition: 500ms;
+ /* For Safari 3.1 to 6.0 */
+  transition: 500ms;
+}
+
+.more-details-button.open button {
+  height: 0%;
+}
+
+button {
+  cursor: pointer;
+  animation: buttonFadeInAnimation 2500ms;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes buttonFadeInAnimation {
+0% {
+  opacity: 0;
+}
+100% {
+  opacity: 1;
+}
+}
+
+button:focus {
+  outline: none;
+}
+
+button img:hover {
+  scale: 1.12;
+  transition: 300ms;
+}
+
+.button-content {
+  animation: 700ms;
+  animation-delay: 0ms;
+  animation-name: buttonFadeIn;
+  animation-iteration-count: 1;
+}
+@keyframes buttonFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-20rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.button-content-header {
+  margin-top: 2rem;
+  margin-left: 12%;
+  margin-right: 0%;
+  position: relative;
+  box-sizing: border-box;
+  background:white;
+  color:#611818;
+  width: 100%;
+  height: 12%;
+  text-align: left;
+  font-size: 2vw;
+  letter-spacing: 0.5rem;
+}
+
+.button-content-header:after {
+  content: '';
+  width: 30%;
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  z-index: -1;
+  margin-bottom: -3px;
+  background: linear-gradient(0.25turn, #611818, rgb(255, 255, 255))
+}
+
+.close-content {
+  display: block;
+  position: absolute;
+  right: 5rem;
+  top: -2.3rem;
+  width: 2rem;
+  height: 2rem;
+  transition: 400ms;
+}
+
+.close-content:hover{
+  transform: rotate(-180deg);
+}
+
+.close-content span {
+  background: #611818;
+  width: 2rem;
+  height: 0.3rem;
+  display: block;
+  position: absolute;
+  top: 1rem;
+  right: 0rem;
+}
+
+.x-1 {
+  transform: rotate(45deg);
+}
+
+.x-2 {
+  transform: rotate(-45deg);
+}
+
+.read-more {
+  text-align: center;
+  margin-top: 0%;
+  padding: 1rem 1rem;
+  margin-left: 12%;
+  margin-right: 5%;
+  background: linear-gradient(0.25turn, #611818, #611818c2, #a1795ec0);
+  font-size: 0.9vw;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 21%;
+}
+
+.read-more a {
+  text-decoration: none;
+  color: white;
+}
+
+.read-more:hover {
+  scale: 1.1;
+  transition: 300ms;
+}
+
+.hidden {
+  animation: 400ms;
+  animation-name: hide;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes hide {
+  0% {
+  opacity: 1;
+  }
+  100% {
+  opacity: 0;
+  transform: translateX(-100px);
+  }
+}
+
+@media screen and (max-width: 1680px) {
+
+  body {
+    color: white;
+    margin: 0;
+    overflow-x: hidden;  
+  }
+  
+  .bg {
+    width: 100vw;
+    z-index: -1;
+    height: 100vh;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+  }
+  
+  .side-bar {
+    width: 27.7%;
+    height: 100%;
+    margin-top: 0rem;
+    position: absolute;
+    background-color: #611818;
+    display: flex;
+  }
+  
+  .modal.left .modal-dialog {
+    position: absolute;
+    margin-top: 0rem;
+    width: 13%;
+    height: 100%;
+    -webkit-transform: translate3d(0%, 0, 0);
+    -ms-transform: translate3d(0%, 0, 0);
+    -o-transform: translate3d(0%, 0, 0);
+    transform: translate3d(0%, 0, 0);
+  }
+  
+  .modal.left .modal-content {
+    height: 100%;
+    overflow-y: auto;
+  }
+  
+  .modal-p {
+    margin-top: 18rem;
+    font-size: 1.5vw;
+    color: white;
+    rotate: -90deg;
+  }
+  
+  .modal.left .modal-body {
+    padding: 0rem 0rem 0rem;
+  }
+  
+  .modal.left.fade .modal-dialog{
+    left: -20rem;
+    -webkit-transition: opacity 0.3s linear, left 0.3s ease-out;
+    -moz-transition: opacity 0.3s linear, left 0.3s ease-out;
+    -o-transition: opacity 0.3s linear, left 0.3s ease-out;
+    transition: opacity 0.3s linear, left 0.3s ease-out;
+  }
+  
+  .modal.left.fade.in .modal-dialog{
+    transition-delay: 100ms;
+    left: 0rem;
+  }
+  
+  .modal-content {
+    border-radius: 0;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.226);
+  }
+  
+  .modal-header {
+    border-bottom-color: #EEEEEE;
+    background-color: #FAFAFA;
+  }
+  
+  p {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: .86vw;
+      line-height: 2rem;
+      margin-left: 12%;
+      margin-right: 12%;
+      color:rgb(88, 86, 86);
+  }
+  
+  h1 {
+    position: absolute;
+    color: white;
+    padding-top: 12%;
+    padding-left: 10%;
+    padding-bottom: 0rem;
+    font-size: 15vw;
+    animation: 800ms;
+    animation-name: move;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+  @keyframes move {
+    0% {
+      opacity: 0;
+      transform: translateX(-6rem);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+  
+  .facebook {
+    float: right; 
+    margin-top: 43rem; 
+    margin-right: 1.5rem; 
+    position: relative;
+    scale: 1;
+    transition: 300ms;
+    animation: fadeInAnimation 2200ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+  @keyframes fadeInAnimation {
+    0% {
+    opacity: 0;
+    }
+    100% {
+    opacity: 1;
+    }
+  }
+  
+  .facebook:hover {
+    scale: 1.2;
+  }
+  
+  .insta {
+    float: right; 
+    margin-top: 50rem; 
+    margin-right: -4.5rem; 
+    position: relative;
+    scale: 1;
+    transition: 300ms;
+    animation: fadeInAnimation 2200ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+  @keyframes fadeInAnimation {
+    0% {
+    opacity: 0;
+    }
+    100% {
+    opacity: 1;
+    }
+  }
+  
+  .insta:hover {
+  scale: 1.2;
+  }
+  
+  .progress {
+    background: rgba(255,255,255,0.1);
+    border-radius: 0rem;
+    align-items: center;
+    position: absolute;
+    display: block;
+    height: 0.7rem;
+    width: 31rem;
+    margin-top: 52.3rem;
+    margin-left: 59.5%;
+  }
+  
+  .progress-value {
+    border-radius: 1rem;
+    background: #fff;
+    height: 0.7rem;
+    width: 0;
+  }
+
+.container {
+  width: 80rem;
+  margin-left: 18rem;
+  margin-top: 37.7rem;
+  position: fixed;
+}
+
+h2 {
+  width: 25rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight:100;
+  font-size: 1.8vw;
+  position: relative;
+  color: white;
+  animation: h2FadeInAnimation 1500ms;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes h2FadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.more-details-button {
+  border-radius: 25rem;
+  height: 4rem;
+  width: 4rem;
+  overflow: hidden;
+  position:relative;
+  left: -7%;
+  top: 0rem;
+  -webkit-transition: 500ms;
+ /* For Safari 3.1 to 6.0 */
+  transition: 500ms;
+  transform: translate3d(50%, -116%, 0);
+}
+
+.more-details-button button {
+  background: none;
+  border: none;
+  width: 100%;
+  height: 100%;
+}
+
+.more-details-button button span {
+  margin-right: 0.5rem;
+}
+
+.more-details-button.open {
+  top: 4rem;
+  left: -22.4%;
+  width: 34%;
+  height: 34rem;
+  z-index: 10;
+  cursor: default;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 0em;
+  border-radius: 0rem;
+  -webkit-transition: 500ms;
+ /* For Safari 3.1 to 6.0 */
+  transition: 500ms;
+}
+
+.more-details-button.open button {
+  height: 0%;
+}
+
+button {
+  cursor: pointer;
+  animation: buttonFadeInAnimation 2500ms;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes buttonFadeInAnimation {
+0% {
+  opacity: 0;
+}
+100% {
+  opacity: 1;
+}
+}
+
+button:focus {
+  outline: none;
+}
+
+button img:hover {
+  scale: 1.12;
+  transition: 300ms;
+}
+
+.button-content {
+  animation: 700ms;
+  animation-delay: 0ms;
+  animation-name: buttonFadeIn;
+  animation-iteration-count: 1;
+}
+@keyframes buttonFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-20rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.button-content-header {
+  margin-top: 2rem;
+  margin-left: 12%;
+  margin-right: 0%;
+  position: relative;
+  box-sizing: border-box;
+  background:white;
+  color:#611818;
+  width: 100%;
+  height: 12%;
+  text-align: left;
+  font-size: 2vw;
+  letter-spacing: 0.5rem;
+}
+
+.button-content-header:after {
+  content: '';
+  width: 30%;
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  z-index: -1;
+  margin-bottom: -3px;
+  background: linear-gradient(0.25turn, #611818, rgb(255, 255, 255))
+}
+
+.close-content {
+  display: block;
+  position: absolute;
+  right: 5rem;
+  top: -2.3rem;
+  width: 2rem;
+  height: 2rem;
+  transition: 400ms;
+}
+
+.close-content:hover{
+  transform: rotate(-180deg);
+}
+
+.close-content span {
+  background: #611818;
+  width: 2rem;
+  height: 0.3rem;
+  display: block;
+  position: absolute;
+  top: 1rem;
+  right: 0rem;
+}
+
+.x-1 {
+  transform: rotate(45deg);
+}
+
+.x-2 {
+  transform: rotate(-45deg);
+}
+
+.read-more {
+  text-align: center;
+  margin-top: 0%;
+  padding: 1rem 1rem;
+  margin-left: 12%;
+  margin-right: 5%;
+  background: linear-gradient(0.25turn, #611818, #611818c2, #a1795ec0);
+  font-size: 0.9vw;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 21%;
+}
+
+.read-more a {
+  text-decoration: none;
+  color: white;
+}
+
+.read-more:hover {
+  scale: 1.1;
+  transition: 300ms;
+}
+
+.hidden {
+  animation: 400ms;
+  animation-name: hide;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes hide {
+  0% {
+  opacity: 1;
+  }
+  100% {
+  opacity: 0;
+  transform: translateX(-100px);
+  }
+}
+
+}
+
+@media screen and (max-width: 1440px) {
+
+  body {
+    color: white;
+    margin: 0;
+    overflow-x: hidden;  
+  }
+  
+  .bg {
+    width: 100vw;
+    z-index: -1;
+    height: 100vh;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+  }
+  
+  .side-bar {
+    width: 27.7%;
+    height: 100%;
+    margin-top: 0rem;
+    position: absolute;
+    background-color: #611818;
+    display: flex;
+  }
+  
+  .modal.left .modal-dialog {
+    position: absolute;
+    margin-top: 0rem;
+    width: 13%;
+    height: 100%;
+    -webkit-transform: translate3d(0%, 0, 0);
+    -ms-transform: translate3d(0%, 0, 0);
+    -o-transform: translate3d(0%, 0, 0);
+    transform: translate3d(0%, 0, 0);
+  }
+  
+  .modal.left .modal-content {
+    height: 100%;
+    overflow-y: auto;
+  }
+  
+  .modal-p {
+    margin-top: 18rem;
+    font-size: 1.5vw;
+    color: white;
+    rotate: -90deg;
+  }
+  
+  .modal.left .modal-body {
+    padding: 0rem 0rem 0rem;
+  }
+  
+  .modal.left.fade .modal-dialog{
+    left: -20rem;
+    -webkit-transition: opacity 0.3s linear, left 0.3s ease-out;
+    -moz-transition: opacity 0.3s linear, left 0.3s ease-out;
+    -o-transition: opacity 0.3s linear, left 0.3s ease-out;
+    transition: opacity 0.3s linear, left 0.3s ease-out;
+  }
+  
+  .modal.left.fade.in .modal-dialog{
+    transition-delay: 100ms;
+    left: 0rem;
+  }
+  
+  .modal-content {
+    border-radius: 0;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.226);
+  }
+  
+  .modal-header {
+    border-bottom-color: #EEEEEE;
+    background-color: #FAFAFA;
+  }
+  
+  p {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: .86vw;
+      line-height: 2rem;
+      margin-left: 12%;
+      margin-right: 12%;
+      color:rgb(88, 86, 86);
+  }
+  
+  h1 {
+    position: absolute;
+    color: white;
+    padding-top: 12%;
+    padding-left: 10%;
+    padding-bottom: 0rem;
+    font-size: 15vw;
+    animation: 800ms;
+    animation-name: move;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+  @keyframes move {
+    0% {
+      opacity: 0;
+      transform: translateX(-6rem);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+  
+  .facebook {
+    float: right; 
+    margin-top: 33rem; 
+    margin-right: 1.5rem; 
+    position: relative;
+    scale: 1;
+    transition: 300ms;
+    animation: fadeInAnimation 2200ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+  @keyframes fadeInAnimation {
+    0% {
+    opacity: 0;
+    }
+    100% {
+    opacity: 1;
+    }
+  }
+  
+  .facebook:hover {
+    scale: 1.2;
+  }
+  
+  .insta {
+    float: right; 
+    margin-top: 40rem; 
+    margin-right: -4.5rem; 
+    position: relative;
+    scale: 1;
+    transition: 300ms;
+    animation: fadeInAnimation 2200ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+  @keyframes fadeInAnimation {
+    0% {
+    opacity: 0;
+    }
+    100% {
+    opacity: 1;
+    }
+  }
+  
+  .insta:hover {
+  scale: 1.2;
+  }
+  
+  .progress {
+    background: rgba(255,255,255,0.1);
+    border-radius: 0rem;
+    align-items: center;
+    position: absolute;
+    display: block;
+    height: 0.7rem;
+    width: 31rem;
+    margin-top: 42.3rem;
+    margin-left: 52.5%;
+  }
+  
+  .progress-value {
+    border-radius: 1rem;
+    background: #fff;
+    height: 0.7rem;
+    width: 0;
+  }
+
+.container {
+  width: 40rem;
+  margin-left: 15rem;
+  margin-top: 32.4rem;
+  position: fixed;
+}
+
+h2 {
+  width: 25rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight:100;
+  font-size: 1.8vw;
+  position: relative;
+  color: white;
+  animation: h2FadeInAnimation 1500ms;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes h2FadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.more-details-button {
+  border-radius: 25rem;
+  height: 4rem;
+  width: 4rem;
+  overflow: hidden;
+  position:relative;
+  left: -14%;
+  top: 0.4rem;
+  -webkit-transition: 500ms;
+ /* For Safari 3.1 to 6.0 */
+  transition: 500ms;
+  transform: translate3d(50%, -116%, 0);
+}
+
+.more-details-button button {
+  background: none;
+  border: none;
+  width: 100%;
+  height: 100%;
+}
+
+.more-details-button button span {
+  margin-right: 0.5rem;
+}
+
+.more-details-button.open {
+  top: 4rem;
+  left: -40.2%;
+  width: 64%;
+  height: 34rem;
+  z-index: 10;
+  cursor: default;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 0em;
+  border-radius: 0rem;
+  -webkit-transition: 500ms;
+ /* For Safari 3.1 to 6.0 */
+  transition: 500ms;
+}
+
+.more-details-button.open button {
+  height: 0%;
+}
+
+button {
+  cursor: pointer;
+  animation: buttonFadeInAnimation 2500ms;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes buttonFadeInAnimation {
+0% {
+  opacity: 0;
+}
+100% {
+  opacity: 1;
+}
+}
+
+button:focus {
+  outline: none;
+}
+
+button img:hover {
+  scale: 1.12;
+  transition: 300ms;
+}
+
+.button-content {
+  animation: 700ms;
+  animation-delay: 0ms;
+  animation-name: buttonFadeIn;
+  animation-iteration-count: 1;
+}
+@keyframes buttonFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-20rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.button-content-header {
+  margin-top: 2rem;
+  margin-left: 12%;
+  margin-right: 0%;
+  position: relative;
+  box-sizing: border-box;
+  background:white;
+  color:#611818;
+  width: 100%;
+  height: 12%;
+  text-align: left;
+  font-size: 2vw;
+  letter-spacing: 0.5rem;
+}
+
+.button-content-header:after {
+  content: '';
+  width: 30%;
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  z-index: -1;
+  margin-bottom: -3px;
+  background: linear-gradient(0.25turn, #611818, rgb(255, 255, 255))
+}
+
+.close-content {
+  display: block;
+  position: absolute;
+  right: 5rem;
+  top: -2.3rem;
+  width: 2rem;
+  height: 2rem;
+  transition: 400ms;
+}
+
+.close-content:hover{
+  transform: rotate(-180deg);
+}
+
+.close-content span {
+  background: #611818;
+  width: 2rem;
+  height: 0.3rem;
+  display: block;
+  position: absolute;
+  top: 1rem;
+  right: 0rem;
+}
+
+.x-1 {
+  transform: rotate(45deg);
+}
+
+.x-2 {
+  transform: rotate(-45deg);
+}
+
+.read-more {
+  text-align: center;
+  margin-top: 0%;
+  padding: 1rem 1rem;
+  margin-left: 12%;
+  margin-right: 5%;
+  background: linear-gradient(0.25turn, #611818, #611818c2, #a1795ec0);
+  font-size: 0.9vw;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 21%;
+}
+
+.read-more a {
+  text-decoration: none;
+  color: white;
+}
+
+.read-more:hover {
+  scale: 1.1;
+  transition: 300ms;
+}
+
+.hidden {
+  animation: 400ms;
+  animation-name: hide;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes hide {
+  0% {
+  opacity: 1;
+  }
+  100% {
+  opacity: 0;
+  transform: translateX(-100px);
+  }
+}
+
+}
+
+@media screen and (max-width: 1380px) {
+
+  body {
+    color: white;
+    margin: 0;
+    overflow-x: hidden;  
+  }
+  
+  .bg {
+    width: 100vw;
+    z-index: -1;
+    height: 100vh;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+  }
+  
+  .side-bar {
+    width: 27.7%;
+    height: 100%;
+    margin-top: 0rem;
+    position: absolute;
+    background-color: #611818;
+    display: flex;
+  }
+  
+  .modal.left .modal-dialog {
+    position: absolute;
+    margin-top: 0rem;
+    width: 13%;
+    height: 100%;
+    -webkit-transform: translate3d(0%, 0, 0);
+    -ms-transform: translate3d(0%, 0, 0);
+    -o-transform: translate3d(0%, 0, 0);
+    transform: translate3d(0%, 0, 0);
+  }
+  
+  .modal.left .modal-content {
+    height: 100%;
+    overflow-y: auto;
+  }
+  
+  .modal-p {
+    margin-top: 10rem;
+    font-size: 1.5vw;
+    color: white;
+    rotate: -90deg;
+  }
+  
+  .modal.left .modal-body {
+    padding: 0rem 0rem 0rem;
+  }
+  
+  .modal.left.fade .modal-dialog{
+    left: -20rem;
+    -webkit-transition: opacity 0.3s linear, left 0.3s ease-out;
+    -moz-transition: opacity 0.3s linear, left 0.3s ease-out;
+    -o-transition: opacity 0.3s linear, left 0.3s ease-out;
+    transition: opacity 0.3s linear, left 0.3s ease-out;
+  }
+  
+  .modal.left.fade.in .modal-dialog{
+    transition-delay: 100ms;
+    left: 0rem;
+  }
+  
+  .modal-content {
+    border-radius: 0;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.226);
+  }
+  
+  .modal-header {
+    border-bottom-color: #EEEEEE;
+    background-color: #FAFAFA;
+  }
+  
+  p {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1.05vw;
+      line-height: 2rem;
+      margin-left: 12%;
+      margin-right: 12%;
+      color:rgb(88, 86, 86);
+  }
+  
+  h1 {
+    position: absolute;
+    color: white;
+    padding-top: 12%;
+    padding-left: 10%;
+    padding-bottom: 0rem;
+    font-size: 15vw;
+    animation: 800ms;
+    animation-name: move;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+  @keyframes move {
+    0% {
+      opacity: 0;
+      transform: translateX(-6rem);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+  
+  .facebook {
+    float: right; 
+    margin-top: 43rem; 
+    margin-right: 1.5rem; 
+    position: relative;
+    scale: 1;
+    transition: 300ms;
+    animation: fadeInAnimation 2200ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+  @keyframes fadeInAnimation {
+    0% {
+    opacity: 0;
+    }
+    100% {
+    opacity: 1;
+    }
+  }
+  
+  .facebook:hover {
+    scale: 1.2;
+  }
+  
+  .insta {
+    float: right; 
+    margin-top: 50rem; 
+    margin-right: -4.5rem; 
+    position: relative;
+    scale: 1;
+    transition: 300ms;
+    animation: fadeInAnimation 2200ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+  @keyframes fadeInAnimation {
+    0% {
+    opacity: 0;
+    }
+    100% {
+    opacity: 1;
+    }
+  }
+  
+  .insta:hover {
+  scale: 1.2;
+  }
+  
+  .progress {
+    background: rgba(255,255,255,0.1);
+    border-radius: 0rem;
+    align-items: center;
+    position: absolute;
+    display: block;
+    height: 0.7rem;
+    width: 31rem;
+    margin-top: 55rem;
+    margin-left: 55.5%;
+  }
+  
+  .progress-value {
+    border-radius: 1rem;
+    background: #fff;
+    height: 0.7rem;
+    width: 0;
+  }
+
+.container {
+  width: 80rem;
+  margin-left: 14rem;
+  margin-top: 30.8rem;
+  position: fixed;
+}
+
+h2 {
+  width: 25rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight:100;
+  font-size: 1.8vw;
+  position: relative;
+  color: white;
+  animation: h2FadeInAnimation 1500ms;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes h2FadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.more-details-button {
+  border-radius: 25rem;
+  height: 4rem;
+  width: 4rem;
+  overflow: hidden;
+  position:relative;
+  left: -7%;
+  top: 0.5rem;
+  -webkit-transition: 500ms;
+ /* For Safari 3.1 to 6.0 */
+  transition: 500ms;
+  transform: translate3d(50%, -116%, 0);
+}
+
+.more-details-button button {
+  background: none;
+  border: none;
+  width: 100%;
+  height: 100%;
+}
+
+.more-details-button button span {
+  margin-right: 0.5rem;
+}
+
+.more-details-button.open {
+  top: 6rem;
+  left: -20.5%;
+  width: 34%;
+  height: 32rem;
+  z-index: 10;
+  cursor: default;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 0em;
+  border-radius: 0rem;
+  -webkit-transition: 500ms;
+ /* For Safari 3.1 to 6.0 */
+  transition: 500ms;
+}
+
+.more-details-button.open button {
+  height: 0%;
+}
+
+button {
+  cursor: pointer;
+  animation: buttonFadeInAnimation 2500ms;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes buttonFadeInAnimation {
+0% {
+  opacity: 0;
+}
+100% {
+  opacity: 1;
+}
+}
+
+button:focus {
+  outline: none;
+}
+
+button img:hover {
+  scale: 1.12;
+  transition: 300ms;
+}
+
+.button-content {
+  animation: 700ms;
+  animation-delay: 0ms;
+  animation-name: buttonFadeIn;
+  animation-iteration-count: 1;
+}
+@keyframes buttonFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-20rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.button-content-header {
+  margin-top: 2.5rem;
+  margin-left: 12%;
+  margin-right: 0%;
+  position: relative;
+  box-sizing: border-box;
+  background:white;
+  color:#611818;
+  width: 100%;
+  height: 12%;
+  text-align: left;
+  font-size: 2vw;
+  letter-spacing: 0.5rem;
+}
+
+.button-content-header:after {
+  content: '';
+  width: 30%;
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  z-index: -1;
+  margin-bottom: -3px;
+  background: linear-gradient(0.25turn, #611818, rgb(255, 255, 255))
+}
+
+.close-content {
+  display: block;
+  position: absolute;
+  right: 4rem;
+  top: -2.5rem;
+  width: 2rem;
+  height: 2rem;
+  transition: 400ms;
+}
+
+.close-content:hover{
+  transform: rotate(-180deg);
+}
+
+.close-content span {
+  background: #611818;
+  width: 2rem;
+  height: 0.3rem;
+  display: block;
+  position: absolute;
+  top: 1rem;
+  right: 0rem;
+}
+
+.x-1 {
+  transform: rotate(45deg);
+}
+
+.x-2 {
+  transform: rotate(-45deg);
+}
+
+.read-more {
+  text-align: center;
+  margin-top: 0%;
+  padding: 1rem 1rem;
+  margin-left: 12%;
+  margin-right: 5%;
+  background: linear-gradient(0.25turn, #611818, #611818c2, #a1795ec0);
+  font-size: 1.1vw;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 21%;
+}
+
+.read-more a {
+  text-decoration: none;
+  color: white;
+}
+
+.read-more:hover {
+  scale: 1.1;
+  transition: 300ms;
+}
+
+.hidden {
+  animation: 400ms;
+  animation-name: hide;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes hide {
+  0% {
+  opacity: 1;
+  }
+  100% {
+  opacity: 0;
+  transform: translateX(-100px);
+  }
+}
+
+}
+
+@media screen and (max-width: 1075px) {
+
+  body {
+    color: white;
+    margin: 0;
+    overflow-x: hidden;  
+  }
+  
+  .bg {
+    width: 100vw;
+    z-index: -1;
+    height: 100vh;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+  }
+  
+  .side-bar {
+    width: 27.7%;
+    height: 100%;
+    margin-top: 0rem;
+    position: absolute;
+    background-color: #611818;
+    display: flex;
+  }
+  
+  .modal.left .modal-dialog {
+    position: absolute;
+    margin-top: 0rem;
+    width: 13%;
+    height: 100%;
+    -webkit-transform: translate3d(0%, 0, 0);
+    -ms-transform: translate3d(0%, 0, 0);
+    -o-transform: translate3d(0%, 0, 0);
+    transform: translate3d(0%, 0, 0);
+  }
+  
+  .modal.left .modal-content {
+    height: 100%;
+    overflow-y: auto;
+  }
+  
+  .modal-p {
+    margin-top: 10rem;
+    font-size: 1.5vw;
+    color: white;
+    rotate: -90deg;
+  }
+  
+  .modal.left .modal-body {
+    padding: 0rem 0rem 0rem;
+  }
+  
+  .modal.left.fade .modal-dialog{
+    left: -20rem;
+    -webkit-transition: opacity 0.3s linear, left 0.3s ease-out;
+    -moz-transition: opacity 0.3s linear, left 0.3s ease-out;
+    -o-transition: opacity 0.3s linear, left 0.3s ease-out;
+    transition: opacity 0.3s linear, left 0.3s ease-out;
+  }
+  
+  .modal.left.fade.in .modal-dialog{
+    transition-delay: 100ms;
+    left: 0rem;
+  }
+  
+  .modal-content {
+    border-radius: 0;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.226);
+  }
+  
+  .modal-header {
+    border-bottom-color: #EEEEEE;
+    background-color: #FAFAFA;
+  }
+  
+  p {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1.3vw;
+      line-height: 2rem;
+      margin-left: 12%;
+      margin-right: 12%;
+      color:rgb(88, 86, 86);
+  }
+  
+  h1 {
+    position: absolute;
+    color: white;
+    padding-top: 12%;
+    padding-left: 10%;
+    padding-bottom: 0rem;
+    font-size: 15vw;
+    animation: 800ms;
+    animation-name: move;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+  @keyframes move {
+    0% {
+      opacity: 0;
+      transform: translateX(-6rem);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+  
+  .facebook {
+    float: right; 
+    margin-top: 43rem; 
+    margin-right: 1.5rem; 
+    position: relative;
+    scale: 1;
+    transition: 300ms;
+    animation: fadeInAnimation 2200ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+  @keyframes fadeInAnimation {
+    0% {
+    opacity: 0;
+    }
+    100% {
+    opacity: 1;
+    }
+  }
+  
+  .facebook:hover {
+    scale: 1.2;
+  }
+  
+  .insta {
+    float: right; 
+    margin-top: 50rem; 
+    margin-right: -4.5rem; 
+    position: relative;
+    scale: 1;
+    transition: 300ms;
+    animation: fadeInAnimation 2200ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+  @keyframes fadeInAnimation {
+    0% {
+    opacity: 0;
+    }
+    100% {
+    opacity: 1;
+    }
+  }
+  
+  .insta:hover {
+  scale: 1.2;
+  }
+  
+  .progress {
+    background: rgba(255,255,255,0.1);
+    border-radius: 0rem;
+    align-items: center;
+    position: absolute;
+    display: block;
+    height: 0.7rem;
+    width: 31rem;
+    margin-top: 55.3rem;
+    margin-left: 36.8%;
+  }
+  
+  .progress-value {
+    border-radius: 1rem;
+    background: #fff;
+    height: 0.7rem;
+    width: 0;
+  }
+
+.container {
+  width: 80rem;
+  margin-left: 7rem;
+  margin-top: 35.8rem;
+  position: fixed;
+}
+
+h2 {
+  width: 25rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight:100;
+  font-size: 1.8vw;
+  position: relative;
+  color: white;
+  animation: h2FadeInAnimation 1500ms;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes h2FadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.more-details-button {
+  border-radius: 25rem;
+  height: 4rem;
+  width: 4rem;
+  overflow: hidden;
+  position:relative;
+  left: -7%;
+  top: 1rem;
+  -webkit-transition: 500ms;
+ /* For Safari 3.1 to 6.0 */
+  transition: 500ms;
+  transform: translate3d(50%, -116%, 0);
+}
+
+.more-details-button button {
+  background: none;
+  border: none;
+  width: 100%;
+  height: 100%;
+}
+
+.more-details-button button span {
+  margin-right: 0.5rem;
+}
+
+.more-details-button.open {
+  top: 5rem;
+  left: -14.8%;
+  width: 34%;
+  height: 32rem;
+  z-index: 10;
+  cursor: default;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 0em;
+  border-radius: 0rem;
+  -webkit-transition: 500ms;
+ /* For Safari 3.1 to 6.0 */
+  transition: 500ms;
+}
+
+.more-details-button.open button {
+  height: 0%;
+}
+
+button {
+  cursor: pointer;
+  animation: buttonFadeInAnimation 2500ms;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes buttonFadeInAnimation {
+0% {
+  opacity: 0;
+}
+100% {
+  opacity: 1;
+}
+}
+
+button:focus {
+  outline: none;
+}
+
+button img:hover {
+  scale: 1.12;
+  transition: 300ms;
+}
+
+.button-content {
+  animation: 700ms;
+  animation-delay: 0ms;
+  animation-name: buttonFadeIn;
+  animation-iteration-count: 1;
+}
+@keyframes buttonFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-20rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.button-content-header {
+  margin-top: 2.5rem;
+  margin-left: 12%;
+  margin-right: 0%;
+  position: relative;
+  box-sizing: border-box;
+  background:white;
+  color:#611818;
+  width: 100%;
+  height: 12%;
+  text-align: left;
+  font-size: 3vw;
+  letter-spacing: 0.5rem;
+}
+
+.button-content-header:after {
+  content: '';
+  width: 30%;
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  z-index: -1;
+  margin-bottom: -3px;
+  background: linear-gradient(0.25turn, #611818, rgb(255, 255, 255))
+}
+
+.close-content {
+  display: block;
+  position: absolute;
+  right: 4rem;
+  top: -2.5rem;
+  width: 2rem;
+  height: 2rem;
+  transition: 400ms;
+}
+
+.close-content:hover{
+  transform: rotate(-180deg);
+}
+
+.close-content span {
+  background: #611818;
+  width: 2rem;
+  height: 0.3rem;
+  display: block;
+  position: absolute;
+  top: 1rem;
+  right: 0rem;
+}
+
+.x-1 {
+  transform: rotate(45deg);
+}
+
+.x-2 {
+  transform: rotate(-45deg);
+}
+
+.read-more {
+  text-align: center;
+  margin-top: 0%;
+  padding: 1rem 1rem;
+  margin-left: 12%;
+  margin-right: 5%;
+  background: linear-gradient(0.25turn, #611818, #611818c2, #a1795ec0);
+  font-size: 1.2vw;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 21%;
+}
+
+.read-more a {
+  text-decoration: none;
+  color: white;
+}
+
+.read-more:hover {
+  scale: 1.1;
+  transition: 300ms;
+}
+
+.hidden {
+  animation: 400ms;
+  animation-name: hide;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes hide {
+  0% {
+  opacity: 1;
+  }
+  100% {
+  opacity: 0;
+  transform: translateX(-100px);
+  }
+}
+
+}
+
+@media screen and (max-width: 765px) {
+
+  body {
+    color: white;
+    margin: 0;
+    overflow-x: hidden;  
+  }
+  
+  .bg {
+    width: 100vw;
+    z-index: -1;
+    height: 100.1vh;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+  }
+  
+  .side-bar {
+    width: 27.7%;
+    height: 100%;
+    margin-top: 0rem;
+    position: absolute;
+    background-color: #611818;
+    display: flex;
+  }
+  
+  .modal.left .modal-dialog {
+    position: absolute;
+    margin-top: 0rem;
+    width: 13%;
+    height: 100%;
+    -webkit-transform: translate3d(0%, 0, 0);
+    -ms-transform: translate3d(0%, 0, 0);
+    -o-transform: translate3d(0%, 0, 0);
+    transform: translate3d(0%, 0, 0);
+  }
+  
+  .modal.left .modal-content {
+    height: 100%;
+    overflow-y: auto;
+  }
+  
+  .modal-p {
+    margin-top: 15rem;
+    font-size: 2vw;
+    color: white;
+    rotate: -90deg;
+  }
+  
+  .modal.left .modal-body {
+    padding: 0rem 0rem 0rem;
+  }
+  
+  .modal.left.fade .modal-dialog{
+    left: -20rem;
+    -webkit-transition: opacity 0.3s linear, left 0.3s ease-out;
+    -moz-transition: opacity 0.3s linear, left 0.3s ease-out;
+    -o-transition: opacity 0.3s linear, left 0.3s ease-out;
+    transition: opacity 0.3s linear, left 0.3s ease-out;
+  }
+  
+  .modal.left.fade.in .modal-dialog{
+    transition-delay: 100ms;
+    left: 0rem;
+  }
+  
+  .modal-content {
+    border-radius: 0;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.226);
+  }
+  
+  .modal-header {
+    border-bottom-color: #EEEEEE;
+    background-color: #FAFAFA;
+  }
+  
+  p {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1.5vw;
+      line-height: 2rem;
+      margin-left: 12%;
+      margin-right: 12%;
+      color:rgb(88, 86, 86);
+  }
+  
+  h1 {
+    position: absolute;
+    color: white;
+    padding-top: 12%;
+    padding-left: 10%;
+    padding-bottom: 0rem;
+    font-size: 15vw;
+    animation: 800ms;
+    animation-name: move;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+  @keyframes move {
+    0% {
+      opacity: 0;
+      transform: translateX(-6rem);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+  
+  .facebook {
+    float: right; 
+    margin-top: 43rem; 
+    margin-right: 1.5rem; 
+    position: relative;
+    scale: 1;
+    transition: 300ms;
+    animation: fadeInAnimation 2200ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+  @keyframes fadeInAnimation {
+    0% {
+    opacity: 0;
+    }
+    100% {
+    opacity: 1;
+    }
+  }
+  
+  .facebook:hover {
+    scale: 1.2;
+  }
+  
+  .insta {
+    float: right; 
+    margin-top: 50rem; 
+    margin-right: -4.5rem; 
+    position: relative;
+    scale: 1;
+    transition: 300ms;
+    animation: fadeInAnimation 2200ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+  @keyframes fadeInAnimation {
+    0% {
+    opacity: 0;
+    }
+    100% {
+    opacity: 1;
+    }
+  }
+  
+  .insta:hover {
+  scale: 1.2;
+  }
+  
+  .progress {
+    background: rgba(255,255,255,0.1);
+    border-radius: 0rem;
+    align-items: center;
+    position: absolute;
+    display: block;
+    height: 0.7rem;
+    width: 20rem;
+    margin-top: 55rem;
+    margin-left: 37%;
+  }
+  
+  .progress-value {
+    border-radius: 1rem;
+    background: #fff;
+    height: 0.7rem;
+    width: 0;
+  }
+
+.container {
+  width: 35rem;
+  margin-left: 5.2rem;
+  margin-top: 39.8rem;
+  position: fixed;
+}
+
+h2 {
+  width: 25rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight:100;
+  font-size: 2.3vw;
+  position: relative;
+  color: white;
+  animation: h2FadeInAnimation 1500ms;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes h2FadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.more-details-button {
+  border-radius: 25rem;
+  height: 4rem;
+  width: 4rem;
+  overflow: hidden;
+  position:relative;
+  left: -16%;
+  top: 1.1rem;
+  -webkit-transition: 500ms;
+ /* For Safari 3.1 to 6.0 */
+  transition: 500ms;
+  transform: translate3d(50%, -116%, 0);
+}
+
+.more-details-button button {
+  background: none;
+  border: none;
+  width: 100%;
+  height: 100%;
+}
+
+.more-details-button button span {
+  margin-right: 0.5rem;
+}
+
+.more-details-button.open {
+  top: 6rem;
+  left: -31.9%;
+  width: 70%;
+  height: 32rem;
+  z-index: 10;
+  cursor: default;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 0em;
+  border-radius: 0rem;
+  -webkit-transition: 500ms;
+ /* For Safari 3.1 to 6.0 */
+  transition: 500ms;
+}
+
+.more-details-button.open button {
+  height: 0%;
+}
+
+button {
+  cursor: pointer;
+  animation: buttonFadeInAnimation 2500ms;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes buttonFadeInAnimation {
+0% {
+  opacity: 0;
+}
+100% {
+  opacity: 1;
+}
+}
+
+button:focus {
+  outline: none;
+}
+
+button img:hover {
+  scale: 1.12;
+  transition: 300ms;
+}
+
+.button-content {
+  animation: 700ms;
+  animation-delay: 0ms;
+  animation-name: buttonFadeIn;
+  animation-iteration-count: 1;
+}
+@keyframes buttonFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-20rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.button-content-header {
+  margin-top: 2.5rem;
+  margin-left: 12%;
+  margin-right: 0%;
+  position: relative;
+  box-sizing: border-box;
+  background:white;
+  color:#611818;
+  width: 100%;
+  height: 12%;
+  text-align: left;
+  font-size: 3vw;
+  letter-spacing: 0.5rem;
+}
+
+.button-content-header:after {
+  content: '';
+  width: 30%;
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  z-index: -1;
+  margin-bottom: -3px;
+  background: linear-gradient(0.25turn, #611818, rgb(255, 255, 255))
+}
+
+.close-content {
+  display: block;
+  position: absolute;
+  right: 4rem;
+  top: -2.5rem;
+  width: 2rem;
+  height: 2rem;
+  transition: 400ms;
+}
+
+.close-content:hover{
+  transform: rotate(-180deg);
+}
+
+.close-content span {
+  background: #611818;
+  width: 2rem;
+  height: 0.3rem;
+  display: block;
+  position: absolute;
+  top: 1rem;
+  right: 0rem;
+}
+
+.x-1 {
+  transform: rotate(45deg);
+}
+
+.x-2 {
+  transform: rotate(-45deg);
+}
+
+.read-more {
+  text-align: center;
+  margin-top: 0%;
+  padding: 1rem 1rem;
+  margin-left: 12%;
+  margin-right: 5%;
+  background: linear-gradient(0.25turn, #611818, #611818c2, #a1795ec0);
+  font-size: 1.5vw;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 21%;
+}
+
+.read-more a {
+  text-decoration: none;
+  color: white;
+}
+
+.read-more:hover {
+  scale: 1.1;
+  transition: 300ms;
+}
+
+.hidden {
+  animation: 400ms;
+  animation-name: hide;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes hide {
+  0% {
+  opacity: 1;
+  }
+  100% {
+  opacity: 0;
+  transform: translateX(-100px);
+  }
+}
+
+}
