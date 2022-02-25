@@ -7,7 +7,7 @@ body {
 .bg {
   width: 100%;
   z-index: -1;
-  background-image: url(/Users/jacobsamuel/Documents/coding_projects/html/portfolio/img/Coding-Challenge-Image.png);
+  background-image: url(Coding-Challenge-Image.jpg);
   height: 100vh;
   background-position: 50% 50%;
   background-repeat: no-repeat;
